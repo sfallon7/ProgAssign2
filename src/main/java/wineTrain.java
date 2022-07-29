@@ -47,7 +47,7 @@ public class wineTrain {
         StringIndexer labelIndexer = new StringIndexer()
                 .setInputCols("quality")
                 .setOutputCol("label")
-                .fit()
+                .fit();
 
         spark.stop();
     }
